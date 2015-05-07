@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<title>Delinquente - A Graphic Design Boutique</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="outputwidth.js"></script>
+<script src="menutoggle.js"></script>
+</head>
+
+<body>
+
+	<div class="page">
+		<header role="banner">
+			<div class="title">
+				<h1>Delinquente</h1>
+				<p>A Graphic Design Boutique</p>
+			</div>
+		</header>
+
+					<!-- end #header -->
+
+		<nav role="navigation">
+			<div class="menu"><img src="images/menu.png" alt="menu"></div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li class="current_page_item"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+					<!-- end nav -->
+
+        <main role="main">
+					<section class="content">
+						<div class="post">
+							<h2 class="title">Contact</h2>
+							<div class="entry">
+                <picture>
+                  <source
+                  media="(min-width: 1000px)"
+                  srcset="images/big.png">
+                  <source
+                  media="(min-width: 640px)"
+                  srcset="images/medium.png">
+                  <img
+                  src="images/small.png"
+                  alt="rose">
+                </picture>
+
+                <form action="../form-processor.php" method="GET">
+                <p><label>Name:<input name="name" class="text-group" type="text"></label><br></p>
+                <p><label>Phone: <input name="phone" class="text-group" type="tel"></label><br></p>
+                <p><label>Email:<input name="email" class="text-group" type="email" placeholder="name@site.com"></label><br></p>
+                  <p>Services Interested In:<br>
+                  <label><input type="radio" name="service" value="webdesign">Web Design</label><br>
+                  <label><input type="radio" name="service" value="branddesign">Brand Design</label><br>
+                  <label><input type="radio" name="service" value="seo">Search Engine Optimization</label><br>
+                  <label><input type="radio" name="service" value="webmarketing">Web Marketing</label><br>
+                  <label><input type="radio" name="service" value="other">Other</label><br>
+                  </p>
+                  <p><label>Experience with Coding:</label>
+                  <select name="experience">
+                    <option value="none">None</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="expert">Expert</option>
+                  </select>
+                </p>
+
+                <p><label>Comments:<br><textarea rows="5" cols="40" name="comments"></textarea></label></p>
+
+                  <button type="submit">Submit</button>
+                </form>
+
+							</div>
+						</div>
+					</section>
+					<!-- end #content -->
+        </main>
+
+
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+	<!-- end #page -->
+<footer role="contentinfo">
+	<p>&copy; Lilian Ho 2015</p>
+</footer>
+<!-- end #footer -->
+</body>
+</html>
